@@ -94,6 +94,7 @@ class Ricci:
 
 
 if __name__=='__main__':
+    #example Schwarzschild metric. In this metric, Ricci Tensor & Ricci Scalar should be exactly 0
     t=Symbol('t')
     r=Symbol('r')
     G=Symbol('G')

@@ -43,3 +43,5 @@ $Ric_{ij}$ can be referred by
 ```python
 Rie[i,j]
 ```
+
+The `__main__` is an example for Schwarzschild metric.
