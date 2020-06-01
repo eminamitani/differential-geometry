@@ -41,7 +41,7 @@ RT=Ric.RicciTensor()
 $Ric_{ij}$ can be referred by
 
 ```python
-Rie[i,j]
+Ric[i,j]
 ```
 
 The `__main__` is an example for Schwarzschild metric.
