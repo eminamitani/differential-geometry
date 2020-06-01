@@ -16,7 +16,7 @@ class Ricci:
     def inverseMetric(self):
         return self.metric.inv()
 
-    def CristoffelSymbol(self):
+    def ChristoffelSymbol(self):
         dim = len(self.coordinate)
         inv=self.metric.inv()
         total=[]
@@ -38,7 +38,7 @@ class Ricci:
         return Array(total)
 
     def RiemannTensor(self):
-        CF=self.CristoffelSymbol()
+        CF=self.ChristoffelSymbol()
         #print(CF[1,0,0])
         dim=len(self.coordinate)
         #print(self.coordinate)
@@ -105,7 +105,7 @@ if __name__=='__main__':
 
     Ric = Ricci(coordinate, g)
     print(Ric.inverseMetric())
-    CF=Ric.CristoffelSymbol()
+    CF=Ric.ChristoffelSymbol()
     print(CF)
     print(CF.shape)
 
