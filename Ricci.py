@@ -28,8 +28,8 @@ class Ricci:
                 for k in range(dim):
                     symbol=0
                     for dummy in range(dim):
-                        symbol=symbol+(inv[i,dummy]*(diff(self.metric[dummy,j],self.coordinate[k])) \
-                                +inv[i,dummy]*(diff(self.metric[dummy,k],self.coordinate[j])) \
+                        symbol=symbol+(inv[i,dummy]*(diff(self.metric[dummy,j],self.coordinate[k]))
+                                +inv[i,dummy]*(diff(self.metric[dummy,k],self.coordinate[j]))
                                 -inv[i,dummy]*(diff(self.metric[j,k],self.coordinate[dummy])))*1/2
                         #print(symbol)
                     container_j.append(simplify(symbol))
